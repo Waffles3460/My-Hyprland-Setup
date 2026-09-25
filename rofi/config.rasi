@@ -1,0 +1,128 @@
+configuration {
+    modes: "drun";
+    sorting-method: "normal";
+    show-icons: true;
+    matching: "regex";
+    drun-match-fields: "name";
+    display-run: "menu:";
+    display-drun: "Launch:";
+}
+
+* {
+    font: "JetBrains Mono 11";
+    background-color: transparent;
+    text-color: #6A7B8C;
+
+    margin: 0px;
+    padding: 0px;
+    spacing: 0px;
+}
+
+window {
+    location: center;
+    width: 500;
+    y-offset: -20;
+
+    border-radius: 12px;
+    border: 1px;
+    border-color: #1D2635; /* Pencereyi arka plandan hafifçe ayırmak için ince, soğuk bir sınır */
+
+    background-color: #0B0E14;
+}
+
+mainbox {
+    padding: 8px;
+    background-color: #0B0E14;
+}
+
+inputbar {
+    background-color: #151B26;
+    border-radius: 6px;
+    border: 0px;
+
+    padding: 8px 12px;
+    spacing: 8px;
+}
+
+prompt {
+    text-color: #AEC6D9;
+    background-color: transparent;
+}
+
+entry {
+    text-color: #8C9FB2;
+    placeholder: "search";
+    placeholder-color: #4B5A6B;
+    background-color: transparent;
+}
+
+listview {
+    background-color: #0B0E14;
+    margin: 8px 0 0;
+
+    columns: 1;
+    lines: 6;
+    fixed-height: false;
+}
+
+/* ===== Elements ===== */
+element {
+    padding: 8px 10px;
+    spacing: 6px;
+    border-radius: 6px;
+}
+
+element normal.normal {
+    background-color: #0B0E14;
+    text-color: #6A7B8C;
+}
+
+element alternate.normal {
+    background-color: #0B0E14;
+    text-color: #6A7B8C;
+}
+
+element normal.urgent {
+    background-color: #231625;
+    text-color: #AEC6D9;
+}
+
+element normal.active {
+    background-color: #0B0E14;
+    text-color: #6A7B8C;
+}
+
+element selected.normal,
+element selected.active {
+    background-color: #1E2736;
+    text-color: #E2EAF2;
+}
+
+element selected.urgent {
+    background-color: #38213B;
+    text-color: #E2EAF2;
+}
+
+element-icon {
+    size: 1em;
+    vertical-align: 0.5;
+    background-color: transparent;
+}
+
+element-text {
+    text-color: inherit;
+    background-color: transparent;
+}
+
+message {
+    margin: 8px 0 0;
+    border-radius: 8px;
+    border: 0px;
+
+    background-color: #0B0E14;
+}
+
+textbox {
+    padding: 8px 16px;
+    background-color: #0B0E14;
+}
